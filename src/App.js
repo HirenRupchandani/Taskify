@@ -146,7 +146,8 @@ const toggleReminder = async (id) => {
   return (
     <Router>
     <div className="App">
-      <Header title={"Task Tracker"} onAdd={()=> setShowAddTask(!showAddTask)}
+      <Header title={`<Taskify/>`} onAdd={()=> setShowAddTask(!showAddTask)}
+      
       showAdd={showAddTask}/>
       
       <Routes>

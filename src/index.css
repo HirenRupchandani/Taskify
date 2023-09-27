@@ -37,10 +37,10 @@ body {
 .btn {
   display: inline-block;
   background: #000;
-  border: 0.5px solid;
+  border: 1px solid;
   border-color: rgb(0, 0, 0);
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -48,6 +48,8 @@ body {
   font-size: 15px;
   font-family: inherit;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:focus {

@@ -8,14 +8,16 @@ const Header = ({title, onAdd, showAdd}) => {
   return (
       <header className='header'>
       <h1>{title}</h1>
-      {location.pathname==='/' && <Button color={showAdd ? 'Red':'Green'} text={showAdd ? 'Close':'Add a Task'} onClick={onAdd} />}
+      <div style={{justifyContent: 'center', alignItems: 'center',}}>
+        {location.pathname==='/' && <Button color={showAdd ? 'Red':'Green'} text={showAdd ? 'Close':'Add a Task'} onClick={onAdd} />}
+        </div>
       <a href="https://hirenrupchandani.github.io/Portfolio" target="_blank">{"By Hiren Rupchandani"}</a>
       </header>
   )
 }
 
 Header.defaultProps = {
-    title:'Taskify',
+    title:'-Taskify-',
 }
 
 Header.propTypes = {
