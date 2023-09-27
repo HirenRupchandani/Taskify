@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Calibri', sans-serif;
+  /* background-color: rgb(253, 176, 52); */
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 3px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  font-size: 18px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(237, 153, 56);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  border: 0.5px solid;
+  border-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-left: 10px solid red;
+  align-items: center;
+}
+
+.task.reminder {
+  border-left: 10px solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.add-form {
+  border-style: solid;
+  border-color: red;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.form-control {
+  margin: auto;
+  width: 500px;
+  padding: 7px 7px 7px 7px;
+}
+
+.form-control label {
+  display: block;
+  margin: auto;
+  font-size: 25px;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 7px 7px 7px 7px;
+  font-size: 20px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 3;
+  padding: 7px 7px 7px 7px;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
