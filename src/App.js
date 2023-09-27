@@ -68,23 +68,23 @@ function App() {
 
 // Fetch Tasks
 
-// const fetchTasks = async() => {
-//       const res = await fetch('https://dummyjson.com/todo?limit=10')
-//       const data = await res.json()
-//       console.log('Data:', data)
-//       return data
-//     }
+const fetchTasks = async() => {
+      const res = await fetch('https://dummyjson.com/todo?limit=10')
+      const data = await res.json()
+      console.log('Data:', data)
+      return data
+    }
 
 
 // Fetch Tasks
 
-    // const fetchTask = async(id) => {
-    //       const res = await fetch(`https://dummyjson.com/todo?limit=10/${id}`)
-    //       const data = await res.json()
-    //       console.log(data)
+    const fetchTask = async(id) => {
+          const res = await fetch(`https://dummyjson.com/todo?limit=10/${id}`)
+          const data = await res.json()
+          console.log(data)
     
-    //       return data
-    //     }
+          return data
+        }
 
 // Add Task
 
@@ -144,6 +144,7 @@ const toggleReminder = async (id) => {
 
 
   return (
+
     <Router basename='/Taskify'>
     <div className="App">
       <Header title={`<Taskify/>`} onAdd={()=> setShowAddTask(!showAddTask)}
